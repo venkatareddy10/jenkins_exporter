@@ -164,14 +164,14 @@ def parse_args():
         default=os.environ.get('JENKINS_SERVER', 'http://jenkins:8080')
     )
     parser.add_argument(
-        '--user',
+        '-u', '--user',
         metavar='user',
         required=False,
         help='jenkins api user',
         default=os.environ.get('JENKINS_USER')
     )
     parser.add_argument(
-        '--password',
+        '-p', '--password',
         metavar='password',
         required=False,
         help='jenkins api password',
